@@ -235,8 +235,6 @@ public class DemoExpandableListAdapter extends BaseExpandableListAdapter
                     Toast.makeText(context, "click option", Toast.LENGTH_SHORT).show();
                 }
             });
-
-            disableOptions();
         }
 
         @Override

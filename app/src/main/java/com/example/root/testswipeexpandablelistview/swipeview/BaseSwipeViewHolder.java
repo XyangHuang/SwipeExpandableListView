@@ -4,6 +4,7 @@ import android.view.View;
 import android.widget.LinearLayout;
 
 import com.example.root.testswipeexpandablelistview.R;
+import com.example.root.testswipeexpandablelistview.ViewUtil;
 
 import butterknife.BindView;
 
@@ -22,11 +23,7 @@ public abstract class BaseSwipeViewHolder
             throw new NullPointerException("Options layout cannot be null");
         }
 
-        for (int i = 0; i < optionsLayout.getChildCount(); i++)
-        {
-            View optionView = optionsLayout.getChildAt(i);
-            optionView.setEnabled(true);
-        }
+        ViewUtil.setEntireViewClickable(optionsLayout, true);
     }
 
     public void disableOptions()
@@ -36,17 +33,13 @@ public abstract class BaseSwipeViewHolder
             throw new NullPointerException("Options layout cannot be null");
         }
 
-        for (int i = 0; i < optionsLayout.getChildCount(); i++)
-        {
-            View optionView = optionsLayout.getChildAt(i);
-            optionView.setEnabled(false);
-        }
+        ViewUtil.setEntireViewClickable(optionsLayout, false);
     }
 
     protected void initializeViews()
     {
-        disableOptions();
         resetOptionsLayoutHeight();
+        disableOptions();
     }
 
     /**
