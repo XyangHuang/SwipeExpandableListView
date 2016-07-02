@@ -1,0 +1,3 @@
+include ':app', ':demo', ':library'
+project(':demo').projectDir = new File('app/libs/AndroidSwipeLayout-master/demo')
+project(':library').projectDir = new File('app/libs/AndroidSwipeLayout-master/library')

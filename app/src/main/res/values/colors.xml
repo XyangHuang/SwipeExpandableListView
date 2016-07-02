@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#418ec4</color>
+    <color name="colorPrimaryDark">#418ec4</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- common -->
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="transparent">#00000000</color>
+    <color name="blue_translucent">#7f418ec4</color>
+    <color name="red_translucent">#7fdc624c</color>
+    <color name="green_translucent">#7f81bb61</color>
+
+    <color name="common_blue">#418ec4</color>
+    <color name="common_orange">#f49c42</color>
+    <color name="common_red">#dc624c</color>
+    <color name="common_green">#81bb61</color>
+
+    <color name="common_divide_line">#dddddd</color>
+    <color name="common_bkg_gray">#f6f6f6</color>
+
+    <color name="common_light_gray">#aaaaaa</color>
+    <color name="common_border_gray">#7f7f7f</color>
+    <color name="common_text_black">#333333</color>
+    <color name="common_text_gray">#7f7f7f</color>
+    <color name="common_text_light_gray">#cccccc</color>
+    <color name="common_text_disabled">#d8d8d8</color>
+    <color name="common_btn_border_disabled">#d8d8d8</color>
+
+    <color name="common_btn_content_disabled">#eeeeee</color>
+    <color name="common_edit_text_hint_gray">#d8d8d8</color>
+    <color name="common_edit_text_border_gray">#dddddd</color>
+
+    <color name="common_item_clicked">#f6f6f6</color>
+    <color name="common_dialog_btn_clicked">#f2f2f2</color>
+    <color name="common_blue_btn_clicked">#377aa8</color>
+    <color name="common_orange_btn_clicked">#d68a36</color>
+    <color name="common_blue_border_white_content_btn_clicked">#eff7fc</color>
+    <color name="common_red_border_white_content_btn_clicked">#fff5f3</color>
+    <color name="common_orange_border_white_content_btn_clicked">#fbf5ef</color>
+</resources>

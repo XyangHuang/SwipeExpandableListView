@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:minHeight="@dimen/operation_order_item_layout_height">
+
+    <LinearLayout
+        android:layout_width="@dimen/margin_100px"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/item_img_order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/operation_order_item_time_img_margin_bottom"
+            android:src="@mipmap/ic_launcher"/>
+
+        <TextView
+            android:id="@+id/item_text_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/margin_30px"
+            tools:text="11:30"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="@dimen/margin_1px"
+        android:layout_height="match_parent"
+        android:background="@color/common_divide_line"/>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_weight="1"
+        android:layout_marginTop="@dimen/operation_order_item_middle_layout_margin"
+        android:layout_marginBottom="@dimen/operation_order_item_middle_layout_margin"
+        android:layout_marginLeft="@dimen/margin_19px"
+        android:layout_marginRight="@dimen/margin_64px">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="left|center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/item_text_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="黄 先生"/>
+
+                <ImageView
+                    android:id="@+id/item_img_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right|center">
+
+                <TextView
+                    android:id="@+id/item_text_people_amount"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/margin_15px"
+                    android:textSize="@dimen/size_28px"
+                    android:text="0"/>
+
+                <ImageView
+                    android:id="@+id/image_party_size"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_10px"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/text_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/common_text_gray"
+                android:textSize="@dimen/size_26px"
+                android:text="123-1234-1234"/>
+
+            <TextView
+                android:id="@+id/text_guest_type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10px"
+                android:textColor="@color/common_orange"
+                android:textSize="@dimen/size_28px"
+                android:text="vip"/>
+
+            <LinearLayout
+                android:id="@+id/layout_table_status_and_name"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:gravity="right|center">
+
+                <ImageView
+                    android:layout_marginRight="@dimen/operation_order_item_table_status_img_margin_right"
+                    android:id="@+id/item_img_table_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/item_text_table_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/size_26px"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:maxWidth="@dimen/margin_200px"
+                    android:gravity="end"
+                    android:text="12"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/layout_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_10px"
+                android:orientation="horizontal"
+                android:baselineAlignedChildIndex="0">
+
+                <TextView
+                    android:id="@+id/text_time_prefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <LinearLayout
+                    android:id="@+id/layout_time_hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAlignedChildIndex="0">
+
+                    <TextView
+                        android:id="@+id/text_time_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/margin_24px"
+                        android:text="小时"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_time_minutes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:baselineAlignedChildIndex="0">
+
+                    <TextView
+                        android:id="@+id/text_time_minutes"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="15"/>
+
+                    <TextView
+                        android:id="@+id/text_minute"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/margin_24px"
+                        android:text="分钟"/>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minHeight="@dimen/margin_100px"
+    android:gravity="center_vertical">
+
+    <!--<View-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="@dimen/margin_1px"-->
+        <!--android:background="@color/common_divide_line"/>-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_90px"
+        android:minHeight="@dimen/margin_90px">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="@dimen/margin_110px"
+                android:layout_height="match_parent"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_group_icon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_30px"
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/text_group_title"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/size_30px"
+                android:textStyle="bold"
+                android:text="待安排"/>
+
+            <TextView
+                android:id="@+id/text_party_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginRight="@dimen/margin_15px"
+                android:gravity="center_vertical"
+                android:textSize="@dimen/size_30px"
+                android:text="0"/>
+
+            <ImageView
+                android:id="@+id/image_party_size"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <LinearLayout
+                android:layout_width="@dimen/margin_64px"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/image_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/margin_2px"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1px"
+        android:background="@color/common_divide_line"/>
+</LinearLayout>
