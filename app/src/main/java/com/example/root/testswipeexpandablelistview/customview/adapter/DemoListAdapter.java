@@ -74,7 +74,7 @@ public class DemoListAdapter extends BaseAdapter
 
         if (convertView == null)
         {
-            convertView = inflater.inflate(R.layout.view_custom_swipe_item, parent, false);
+            convertView = inflater.inflate(R.layout.view_custom_swipe_item_2, parent, false);
 
             holder = new ChildViewHolder(convertView);
 
@@ -111,6 +111,7 @@ public class DemoListAdapter extends BaseAdapter
         LinearLayout timeLayout;
 
         View optionTextView;
+        View optionTextView2;
 
         public ChildViewHolder(View view)
         {
@@ -119,12 +120,23 @@ public class DemoListAdapter extends BaseAdapter
             optionsLayout = (LinearLayout)view.findViewById(R.id.layout_options);
             optionTextView = view.findViewById(R.id.text_option);
 
+            optionTextView2 = view.findViewById(R.id.text_option_2);
+
             optionTextView.setOnClickListener(new View.OnClickListener()
             {
                 @Override
                 public void onClick(View v)
                 {
                     Toast.makeText(context, "click option", Toast.LENGTH_SHORT).show();
+                }
+            });
+
+            optionTextView2.setOnClickListener(new View.OnClickListener()
+            {
+                @Override
+                public void onClick(View v)
+                {
+                    Toast.makeText(context, "click option 2", Toast.LENGTH_SHORT).show();
                 }
             });
         }
