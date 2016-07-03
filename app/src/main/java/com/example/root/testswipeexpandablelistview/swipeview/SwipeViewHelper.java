@@ -15,7 +15,7 @@ import rx.android.schedulers.AndroidSchedulers;
 public class SwipeViewHelper implements BaseSwipeView
 {
     // region Variables
-    private final static int ANIMATION_INTERVAL = 5;   // 动画刷新间隔5ms
+    private final static int ANIMATION_INTERVAL = 2;   // 动画刷新间隔5ms
     private final static int SWIPE_DISTANCE = 20;      // 拉开多少px算打开
 
     private int animationDuration = 200; // 动画时间默认为200ms
@@ -151,6 +151,7 @@ public class SwipeViewHelper implements BaseSwipeView
         }
 
         final double a = 2 * needModeDistance / Math.pow(animationDuration, 2.0); // 得到加速度
+
         final int[] leftTime = new int[1];
         leftTime[0] = animationDuration;
 
@@ -185,9 +186,8 @@ public class SwipeViewHelper implements BaseSwipeView
                             }
                             else
                             {
-                                int costTime = animationDuration - leftTime[0]; // 已用时间
-                                double movedDistance = a * Math.pow(costTime, 2.0) / 2;
-                                scrollDistance = -(needModeDistance - (int)movedDistance - optionsLayoutWidth);
+                                double leftDistance = a * Math.pow(leftTime[0], 2.0) / 2;
+                                scrollDistance = optionsLayoutWidth - (int)leftDistance;
                             }
                         }
                         // 需要关闭
